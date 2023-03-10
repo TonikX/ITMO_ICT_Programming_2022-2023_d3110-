@@ -20,12 +20,12 @@ def jiemi():
             word_decrypt=chr((ord(word)-ord("A") -n) %26 +ord("A"))
         str_decrypt = str_decrypt+word_decrypt
     print("明文为：",str_decrypt)
-
 while 1==1:
-    a=str=input("解密输入2，加密输入1， 3退出")
-    if a==1:
-      jiami()
-    elif a==2:
-        jiemi()
-    elif a==3:
-        break
+        a=input("解密输入2，加密输入1， 3退出\n")
+        a=int(a)
+        if a==1:
+            jiami()
+        elif a==2:
+            jiemi()
+        elif a==3:
+            break
